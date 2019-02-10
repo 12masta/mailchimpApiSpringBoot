@@ -22,9 +22,6 @@ public class DemoApplication {
         return new Response(200, "Hello World v1.1!!");
     }
 
-    public DemoApplication() {
-    }
-
     @PostMapping("/createorupdatecontact")
     @CrossOrigin(origins = {"http://localhost:3000", "https://kurstestowania.pl", "https://www.kurstestowania.pl"})
     @ResponseBody
