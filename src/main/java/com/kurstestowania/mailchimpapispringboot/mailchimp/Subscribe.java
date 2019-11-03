@@ -23,6 +23,8 @@ public class Subscribe {
     private String status;
     @JsonProperty("merge_fields")
     private MergeFields mergeFields;
+    @JsonProperty("tags")
+    private String[] tags;
     @JsonIgnore
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
 
@@ -54,6 +56,16 @@ public class Subscribe {
     @JsonProperty("merge_fields")
     public void setMergeFields(MergeFields mergeFields) {
         this.mergeFields = mergeFields;
+    }
+
+    @JsonProperty("tags")
+    public String[] getTags() {
+        return tags;
+    }
+
+    @JsonProperty("tags")
+    public void setTags(String[] tags) {
+        this.tags = tags;
     }
 
     @JsonAnyGetter
