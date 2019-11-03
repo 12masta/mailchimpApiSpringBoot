@@ -36,6 +36,7 @@ public class DemoApplication {
         subscribe.setMergeFields(mergeFields);
         subscribe.setEmailAddress(contact.getContact().getEmail());
         subscribe.setStatus("subscribed");
+        subscribe.setTags(new String[]{"kurstestowania.pl.16.things.doc"});
         try {
             okhttp3.Response okHttpResponse = http.post("/lists/f00648db58/members/", JsonConverter.toJsonString(subscribe));
             response.setResponse(okHttpResponse.message());
