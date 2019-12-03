@@ -23,7 +23,7 @@ public class DemoApplication {
     }
 
     @PostMapping("/createorupdatecontact")
-    @CrossOrigin(origins = {"http://localhost:3000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app"})
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
     @ResponseBody
     Response createorupdatecontact(@RequestBody ContactContainer contact) {
         ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
