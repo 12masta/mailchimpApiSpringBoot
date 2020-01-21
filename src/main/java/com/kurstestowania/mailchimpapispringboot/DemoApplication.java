@@ -100,6 +100,32 @@ public class DemoApplication {
         return response;
     }
 
+    @PostMapping("/createorupdatecontactseleniumwebdriverhomework")
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
+    @ResponseBody
+    Response createorupdatecontactseleniumwebdriverhomework(@RequestBody ContactContainer contact) {
+        ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
+        Http http = new Http(configurationApi);
+        Response response = new Response(200, "OK");
+        MergeFields mergeFields = new MergeFields();
+        mergeFields.setFNAME("");
+        mergeFields.setLNAME("");
+        Subscribe subscribe = new Subscribe();
+        subscribe.setMergeFields(mergeFields);
+        subscribe.setEmailAddress(contact.getContact().getEmail());
+        subscribe.setStatus("subscribed");
+        subscribe.setTags(new String[]{"selenium.webdriver.homework"});
+        try {
+            okhttp3.Response okHttpResponse = http.post("/lists/f00648db58/members/", JsonConverter.toJsonString(subscribe));
+            response.setResponse(okHttpResponse.message());
+            response.setStatusCode(okHttpResponse.code());
+        } catch (Exception e) {
+            response.setStatusCode(500);
+            response.setResponse(e.getMessage());
+        }
+        return response;
+    }
+
     public static void main(String[] args) {
         SpringApplication.run(DemoApplication.class, args);
     }
