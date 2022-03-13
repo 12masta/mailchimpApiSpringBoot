@@ -23,7 +23,7 @@ public class DemoApplication {
     }
 
     @PostMapping("/createorupdatecontact")
-    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:9000", "http://localhost:8000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:8001", "http://localhost:9000", "http://localhost:8000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
     @ResponseBody
     Response createorupdatecontact(@RequestBody ContactContainer contact) {
         ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
@@ -49,7 +49,7 @@ public class DemoApplication {
     }
 
     @PostMapping("/createorupdatecontactseleniumwebinar")
-    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:8001", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
     @ResponseBody
     Response createorupdatecontactseleniumwebinar(@RequestBody ContactContainer contact) {
         ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
@@ -75,7 +75,7 @@ public class DemoApplication {
     }
 
     @PostMapping("/createorupdatecontactseleniumwebdriverjavaboilerplate")
-    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:8001", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
     @ResponseBody
     Response createorupdatecontactseleniumwebdriverjavaboilerplate(@RequestBody ContactContainer contact) {
         ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
@@ -101,7 +101,7 @@ public class DemoApplication {
     }
 
     @PostMapping("/createorupdatecontactseleniumwebdriverhomework")
-    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
+    @CrossOrigin(origins = {"http://localhost:3000", "http://localhost:4000", "http://localhost:8000", "http://localhost:8001", "http://localhost:9000", "https://kurstestowania.pl", "https://www.kurstestowania.pl", "https://kurstestowaniaselenium.web.app", "https://www.kurstestowaniaselenium.web.app", "https://marcinstanek.pl", "http://marcinstanek.pl"})
     @ResponseBody
     Response createorupdatecontactseleniumwebdriverhomework(@RequestBody ContactContainer contact) {
         ConfigurationApi configurationApi = new ConfigApiReader().getConfigApi();
